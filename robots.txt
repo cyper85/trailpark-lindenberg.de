@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /pi.html
 Disallow: /trails.yaml
+Disallow: /trails.json
