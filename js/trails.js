@@ -28,15 +28,18 @@ readTextFile("trails.json", function(text){
     const th_zone = document.createElement("th");
     const th_trail = document.createElement("th");
     const th_state = document.createElement("th");
+    const th_empty = document.createElement("th");
     th_city.innerHTML = "City";
     th_zone.innerHTML = "Zone";
     th_trail.innerHTML = "Trail";
     th_state.innerHTML = "State";
+    th_empty.setAttribute("with", "40px")
 
     tr_head.appendChild(th_city);
     tr_head.appendChild(th_zone);
     tr_head.appendChild(th_trail);
     tr_head.appendChild(th_state);
+    tr_head.appendChild(th_empty);
     thead.appendChild(tr_head);
     trailtable.appendChild(thead);
     trailtable.appendChild(tbody);
@@ -87,6 +90,20 @@ readTextFile("trails.json", function(text){
                 if (data[city][zone][trail]['message']) {
                     state_td.innerHTML = data[city][zone][trail]['message'];
                 }
+
+                // Editor Button
+                const editor_td = document.createElement("td");
+                const editor_button = document.createElement("a");
+                editor_button.classList.add("btn");
+                editor_button.classList.add("btn-primary");
+                editor_button.classList.add("btn-sm");
+                editor_button.innerHTML = "&#9998;";
+                editor_td.setAttribute("with", "40px")
+                editor_button.setAttribute("data-bs-toggle", "modal");
+                editor_button.setAttribute("data-bs-target", "#editorModal");
+                editor_button.setAttribute("href", "https://editor.trailpark-lindenberg.de/editor.php?city=" + encodeURIComponent(city) + "&zone=" + encodeURIComponent(zone) + "&trail=" + encodeURIComponent(trail));
+                editor_td.appendChild(editor_button);
+                current_tr.appendChild(editor_td);
 
                 current_tr = document.createElement("tr");
                 tbody.appendChild(current_tr);
