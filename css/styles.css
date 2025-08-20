@@ -11929,6 +11929,9 @@ body {
     padding-top: 0;
     padding-left: 17rem;
   }
+  body.trailtable {
+    padding-left: 10px;
+  }
 }
 h1, .h1,
 h2,

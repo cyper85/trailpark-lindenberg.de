@@ -1,4 +1,68 @@
 {
+  "Elgersburg": {
+    "Heidelberg": {
+      "Bratwurst": {
+        "status": "DESTROYED"
+      },
+      "Happy Hippo": {
+        "status": "ACTIVE"
+      },
+      "Huckland": {
+        "status": "DESTROYED"
+      },
+      "HuckNoris": {
+        "status": "DESTROYED"
+      },
+      "Kohlbachtrail": {
+        "status": "WARNING",
+        "message": "vorletzer Abschnitt auf Mikado wechseln, letzter Abschnitt komplett neu gelegt"
+      },
+      "Mikado": {
+        "status": "WARNING",
+        "message": "Zweiter Abschnitt aktuell nicht fahrbar"
+      }
+    },
+    "Rumpelsberg": {
+      "Emmastein DH": {
+        "status": "DESTROYED"
+      },
+      "Emmastein Wanderweg": {
+        "status": "ACTIVE"
+      },
+      "Rumpelsbergtrail": {
+        "status": "ACTIVE"
+      },
+      "Top of Rumpelsberg 2": {
+        "status": "WARNING",
+        "message": "Trail wegen Forstarbeiten am Steigereck teils nicht fahrbar"
+      }
+    }
+  },
+  "Gehren": {
+    "Langen Berg": {
+      "Long Mountain": {
+        "status": "ACTIVE"
+      }
+    }
+  },
+  "Geraberg": {
+    "Steintal": {
+      "Steep Valley": {
+        "status": "ACTIVE"
+      },
+      "Steintal 1": {
+        "alt_name": "Stone Valley",
+        "status": "WARNING",
+        "message": "letzte zwei Abschnitte nicht fahrbar"
+      },
+      "Steintal 2": {
+        "status": "INACTIVE"
+      },
+      "Steintal 3": {
+        "status": "NOT READY"
+      }
+    }
+  },
   "Ilmenau": {
     "Hangeberg": {
       "Hedes Krake Ende": {
@@ -24,7 +88,7 @@
         "status": "INACTIVE"
       },
       "Stony": {
-        "status": "INACTIVE"
+        "status": "DESTROYED"
       },
       "Tentakel": {
         "status": "ACTIVE"
@@ -40,28 +104,6 @@
       },
       "Wilde Hilde": {
         "status": "ACTIVE"
-      }
-    },
-    "Heidelberg": {
-      "Bratwurst": {
-        "status": "INACTIVE"
-      },
-      "Happy Hippo": {
-        "status": "ACTIVE"
-      },
-      "Huckland": {
-        "status": "INACTIVE"
-      },
-      "HuckNoris": {
-        "status": "INACTIVE"
-      },
-      "Kohlbachtrail": {
-        "status": "WARNING",
-        "message": "vorletzer Abschnitt auf Mikado wechseln, letzter Abschnitt komplett neu gelegt"
-      },
-      "Mikado": {
-        "status": "WARNING",
-        "message": "Zweiter Abschnitt aktuell nicht fahrbar"
       }
     },
     "Kickelhahn": {
@@ -83,42 +125,20 @@
       }
     },
     "Lindenberg": {
+      "Long Bob": {
+        "status": "DESTROYED"
+      },
       "Rollercoaster": {
         "status": "ACTIVE"
       },
+      "Schortetrail": {
+        "status": "DESTROYED"
+      },
+      "Speedy Wonder": {
+        "status": "DESTROYED"
+      },
       "Steepy Wonder": {
         "status": "ACTIVE"
-      }
-    },
-    "Rumpelsberg": {
-      "Emmastein DH": {
-        "status": "INACTIVE"
-      },
-      "Emmastein Wanderweg": {
-        "status": "ACTIVE"
-      },
-      "Rumpelsbergtrail": {
-        "status": "ACTIVE"
-      },
-      "Top of Rumpelsberg 2": {
-        "status": "WARNING",
-        "message": "Trail wegen Forstarbeiten am Steigereck teils nicht fahrbar"
-      }
-    },
-    "Steintal": {
-      "Steep Valley": {
-        "status": "ACTIVE"
-      },
-      "Steintal 1": {
-        "alt_name": "Stone Valley",
-        "status": "WARNING",
-        "message": "letzte zwei Abschnitte nicht fahrbar"
-      },
-      "Steintal 2": {
-        "status": "INACTIVE"
-      },
-      "Steintal 3": {
-        "status": "NOT READY"
       }
     },
     "Tragberg": {

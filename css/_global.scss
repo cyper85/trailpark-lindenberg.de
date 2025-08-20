@@ -12,6 +12,9 @@ body {
     padding-top: 0;
     padding-left: $sidebar-base-width;
   }
+  body.trailtable {
+    padding-left: 10px;
+  }
 }
 
 h1,
