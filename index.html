@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Website über die offiziellen Trails in Ilmenau" />
+        <meta name="description" content="Informationsseite zum Trailpark der Stadt Ilmenau am Rande des Thüringer Waldes." />
         <meta name="author" content="Andreas Neumann" />
         <title>Trailpark Lindenberg - Ilmenau</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" sizes="192x192" />
@@ -16,7 +16,7 @@
         <link href="css/styles.css" rel="stylesheet" />
         <meta name="robots" content="all" />
     </head>
-    <body id="page-top">
+    <body id="page-top" itemscope itemtype="https://schema.org/SportsActivityLocation">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -44,18 +44,27 @@
             <!--<img src="assets/img/trailpark-lindenberg.jpg" class="img-fluid" alt="">-->
             <section class="resume-section" id="index">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
+                    <h1 class="mb-0" itemprop="name">
                         Trailpark <span class="text-primary">Lindenberg</span>
                     </h1>
-                    <div class="subheading mb-5">
-                        Offizielle Mountainbike-Trails in Ilmenau
+                    <meta itemprop="publicAccess" content="True" />
+                    <meta itemprop="isAccessibleForFree" content="True" />
+                    <meta itemprop="longitude" content="10.906398" />
+                    <meta itemprop="latitude" content="50.665709" />
+                    <span itemprop="geo" itemscope itemtype="https://schema.org/GeoShape">
+                        <meta itemprop="polygon" content="[10.907782,50.666635],[10.907052,50.666002],[10.906419,50.664989],[10.905937,50.663969],[10.90555,50.663364],[10.903877,50.662411],[10.903211,50.661846],[10.903147,50.661261],[10.90289,50.66084],[10.900443,50.659616],[10.899574,50.65931],[10.898587,50.658419],[10.896581,50.657745],[10.894478,50.659201],[10.895476,50.659813],[10.896206,50.659949],[10.896893,50.660384],[10.897268,50.661261],[10.898448,50.664914],[10.898931,50.666213],[10.898716,50.666947],[10.899059,50.667716],[10.899167,50.668253],[10.899177,50.66915],[10.89951,50.669864],[10.899918,50.670687],[10.90128,50.672298],[10.902536,50.67376],[10.907782,50.666635]" />
+                    </span>
+                    <div itemprop="description">
+                        <div class="subheading mb-5">
+                            Offizielle Mountainbike-Trails in Ilmenau
+                        </div>
+                        <p class="lead mb-5">
+                            Am Lindenberg direkt vor den Toren Ilmenaus betreiben die Stadt Ilmenau und der Ilmenauer Radsportclub e.V. (ILRC) mehrere legale Mountainbike-Trails.
+                        </p>
+                        <p class="lead mb-5">
+                            Der ILRC bietet an mehreren Wochenenden im Jahr einen kostenpflichtigen Shuttle-Service auf den Berg. Nähere Informationen auf der Website <a href="https://www.ilrc.de" target="_blank">ilrc.de</a>
+                        </p>
                     </div>
-                    <p class="lead mb-5">
-                        Am Lindenberg direkt vor den Toren Ilmenaus betreiben die Stadt Ilmenau und der Ilmenauer Radsportclub e.V. (ILRC) mehrere legale Mountainbike-Trails.
-                    </p>
-                    <p class="lead mb-5">
-                        Der ILRC bietet an mehreren Wochenenden im Jahr einen kostenpflichtigen Shuttle-Service auf den Berg. Nähere Informationen auf der Website <a href="https://www.ilrc.de" target="_blank">ilrc.de</a>
-                    </p>
                     <ul class="fa-ul mb-o">
                         <li><a class="nav-link js-scroll-trigger text-blue" href="#flowtrail"><img height="15px" src="assets/img/ilmenau-logo.svg" alt="Stadt Ilmenau"/>&nbsp;FlowTrail</a></li>
                         <li><a class="nav-link js-scroll-trigger text-red" href="#playline"><img height="15px" src="assets/img/ilmenau-logo.svg" alt="Stadt Ilmenau"/>&nbsp;PlayLine</a></li>
@@ -71,6 +80,20 @@
             <section class="resume-section" id="start">
                 <div class="resume-section-content">
                     <h2 class="mb-2">Parken & Starten</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-2">Öffungszeiten</h3>
+                            <p itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+                                Nach Trailpark-Ordnung der Stadt Ilmenau ist die Anlage <i class="textquote">&bdquo;nur bei trockener Bodenbeschaffenheit geöffnet. Bei Regen, feuchter Witterung und Frost ist die Strecke für alle Nutzer gesperrt. Außerdem ist das Benutzen des Trailparks in der Zeit von <time itemprop="closes" content="21:00:00">21:00 Uhr</time> bis <time itemprop="opens" content="09:00:00">09:00 Uhr</time> nicht zulässig.&rdquo;</i>
+                            </p>
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="https://www.openstreetmap.org/way/37307976" target="_blank">Parkplatz Herzogröter Wiese / Kickelhahn</a> (kostenpflichtig)</li>
+                                <li class="list-group-item"><a href="https://www.openstreetmap.org/way/814318652" target="_blank">Parkplatz Tennisplatz / Skihang</a> (kostenfrei)</li>
+                                <li class="list-group-item"><a href="https://www.openstreetmap.org/way/1236056688" target="_blank">Parkplatz Rodelbahn</a> (kostenfrei)</li>
+                                <li class="list-group-item"><a href="https://www.openstreetmap.org/way/1006398207" target="_blank">Parkplatz Schortemühle</a> (nur für Gäste der Schortemühle)</li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-2">Parken</h3>
@@ -114,9 +137,9 @@
             </section>
             <hr class="m-0" />
             <!-- FlowTrail-->
-            <section class="resume-section" id="flowtrail">
+            <section itemprop="containsPlace" itemscope itemtype="https://schema.org/SportsActivityLocation" class="resume-section" id="flowtrail">
                 <div class="resume-section-content">
-                    <h2 class="mb-2 text-blue">FlowTrail</h2>
+                    <h2 itemprop="name" class="mb-2 text-blue">FlowTrail</h2>
                     <div class="subheading mb-5"><img src="assets/img/ilmenau-logo.svg" height="25px" alt="Stadt Ilmenau"/> Stadt Ilmenau</div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1 text-danger">
@@ -124,7 +147,7 @@
                             <p>Die Ausfahrt wurde umgebaut. Bitte vorsichtig fahren.</p>
                         </div>
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Charakter</h3>
+                            <h3 itemprop="description" class="mb-0">Charakter</h3>
                             <p>Der einfachste Trail im Trailpark Lindenberg. Auf gefestigten Untergrund kann man vom Start bis ins Tal rollen. Der Trail bietet unzählige Anliegerkurven, Wellen, welche man pushen oder springen kann, Tables, Doubles, Triples, Hips und einen Step Down.</p>
                             <p>Alle Sprünge sind im Zweifel überrollbar.</p>
                         </div>
@@ -133,9 +156,9 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-2">Links</h3>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="https://www.openstreetmap.org/relation/18200097" target="_blank">OpenStreetMap</a></li>
-                                <li class="list-group-item">Trailforks <a href="https://www.trailforks.com/trails/flowline-1/" target="_blank">Abschnitt 1</a> & <a href="https://www.trailforks.com/trails/flowline-2/" target="_blank">Abschnitt 2</a></li>
-                                <li class="list-group-item"><a href="https://www.outdooractive.com/r/807431524" target="_blank">outdooractive</a></li>
+                                <li class="list-group-item"><a itemprop="map" href="https://www.openstreetmap.org/relation/18200097" target="_blank">OpenStreetMap</a></li>
+                                <li class="list-group-item">Trailforks <a itemprop="sameAs" href="https://www.trailforks.com/trails/flowline-1/" target="_blank">Abschnitt 1</a> & <a itemprop="sameAs" href="https://www.trailforks.com/trails/flowline-2/" target="_blank">Abschnitt 2</a></li>
+                                <li class="list-group-item"><a itemprop="sameAs" href="https://www.outdooractive.com/r/807431524" target="_blank">outdooractive</a></li>
                                 <li class="list-group-item list-group-item-danger">Für Probleme und Verbesserungsvorschläge: <a href="https://mitmachen.ilmenau.de/dialog/1" target="_blank">Mängelmelder der Stadt Ilmenau</a></li>
                             </ul>
                         </div>
@@ -144,16 +167,16 @@
             </section>
             <hr class="m-0" />
             <!-- PlayLine-->
-            <section class="resume-section" id="playline">
+            <section itemprop="containsPlace" itemscope itemtype="https://schema.org/SportsActivityLocation" class="resume-section" id="playline">
                 <div class="resume-section-content">
-                    <h2 class="mb-2 text-red">PlayLine</h2>
+                    <h2 itemprop="name" class="mb-2 text-red">PlayLine</h2>
                     <div class="subheading mb-5"><img src="assets/img/ilmenau-logo.svg" height="25px" alt="Stadt Ilmenau" /> Stadt Ilmenau</div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1 text-danger">
                             <h3 class="mb-0">Hinweis</h3>
                             <p>Die Ausfahrt wurde umgebaut. Bitte vorsichtig fahren.</p>
                         </div>
-                        <div class="flex-grow-1">
+                        <div itemprop="description" class="flex-grow-1">
                             <h3 class="mb-0">Charakter</h3>
                             <p>Gebaute Jumpline mit verschiedenen Sprüngen.</p>
                             <p>Nicht alle Sprünge sind an jeder Stelle überrollbar. Es existieren immer Chickenways.</p>
@@ -163,9 +186,9 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-2">Links</h3>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="https://www.openstreetmap.org/relation/16708105" target="_blank">OpenStreetMap</a></li>
-                                <li class="list-group-item">Trailforks <a href="https://www.trailforks.com/trails/playline-upper-part/" target="_blank">Abschnitt 1</a> & <a href="https://www.trailforks.com/trails/playline-middle-part/" target="_blank">Abschnitt 2</a> & <a href="https://www.trailforks.com/trails/playline-lower-part/" target="_blank">Abschnitt 3</a></li>
-                                <li class="list-group-item"><a href="https://www.outdooractive.com/r/805718073" target="_blank">outdooractive</a></li>
+                                <li class="list-group-item"><a itemprop="map" href="https://www.openstreetmap.org/relation/16708105" target="_blank">OpenStreetMap</a></li>
+                                <li class="list-group-item">Trailforks <a itemprop="sameAs" href="https://www.trailforks.com/trails/playline-upper-part/" target="_blank">Abschnitt 1</a> & <a itemprop="sameAs" href="https://www.trailforks.com/trails/playline-middle-part/" target="_blank">Abschnitt 2</a> & <a href="https://www.trailforks.com/trails/playline-lower-part/" target="_blank">Abschnitt 3</a></li>
+                                <li class="list-group-item"><a itemprop="sameAs" href="https://www.outdooractive.com/r/805718073" target="_blank">outdooractive</a></li>
                                 <li class="list-group-item list-group-item-danger">Für Probleme und Verbesserungsvorschläge: <a href="https://mitmachen.ilmenau.de/dialog/1" target="_blank">Mängelmelder der Stadt Ilmenau</a></li>
                             </ul>
                         </div>
@@ -174,16 +197,16 @@
             </section>
             <hr class="m-0" />
             <!-- EnduroTrail -->
-            <section class="resume-section" id="endurotrail">
+            <section itemprop="containsPlace" itemscope itemtype="https://schema.org/SportsActivityLocation" class="resume-section" id="endurotrail">
                 <div class="resume-section-content">
-                    <h2 class="mb-2 text-red">EnduroTrail</h2>
+                    <h2 itemprop="name" class="mb-2 text-red">EnduroTrail</h2>
                     <div class="subheading mb-5"><img src="assets/img/ilmenau-logo.svg" height="25px" alt="Stadt Ilmenau" /> Stadt Ilmenau</div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <!--<div class="flex-grow-1 text-danger">
                             <h3 class="mb-0">Hinweis</h3>
                             <p>Der Trail wird voraussichtlich am 25. Oktober eröffnet.</p>
                         </div>-->
-                        <div class="flex-grow-1">
+                        <div itemprop="description" class="flex-grow-1">
                             <h3 class="mb-0">Charakter</h3>
                             <p>Naturbelassene Strecke über Wurzeln und Steine.</p>
                             <p>Der obere Abschnitt bis zum Krummen Weg ist sehr einfach und bietet verschiedene Möglichkeiten für ein isoliertes Techniktraining.</p>
@@ -195,7 +218,7 @@
                         <div class="col-md-2">
                             <div class="thumbnail">
                                 <a href="assets/img/enduro-1.jpg">
-                                    <img src="assets/img/enduro-1.jpg" class="img-thumbnail img-circle" alt="Wurzelteppich zwischen Baumstümpfen">
+                                    <img itemprop="image" src="assets/img/enduro-1.jpg" class="img-thumbnail img-circle" alt="Wurzelteppich zwischen Baumstümpfen">
                                     <div class="caption">
                                         <p>Wurzelteppich zwischen Baumstümpfen am Ende vom ersten Abschnitt</p>
                                     </div>
@@ -205,7 +228,7 @@
                         <div class="col-md-2">
                             <div class="thumbnail">
                                 <a href="assets/img/enduro-2.jpg">
-                                    <img src="assets/img/enduro-2.jpg" class="img-thumbnail img-circle" alt="Off-Camber im zweiten Abschnitt">
+                                    <img itemprop="image" src="assets/img/enduro-2.jpg" class="img-thumbnail img-circle" alt="Off-Camber im zweiten Abschnitt">
                                     <div class="caption">
                                         <p>Off-Camber im zweiten Abschnitt</p>
                                     </div>
@@ -215,7 +238,7 @@
                         <div class="col-md-2">
                             <div class="thumbnail">
                                 <a href="assets/img/enduro-3.jpg">
-                                    <img src="assets/img/enduro-3.jpg" class="img-thumbnail img-circle" alt="Loser Untergrund im Wald">
+                                    <img itemprop="image" src="assets/img/enduro-3.jpg" class="img-thumbnail img-circle" alt="Loser Untergrund im Wald">
                                     <div class="caption">
                                         <p>Loser Untergrund im Wald</p>
                                     </div>
@@ -225,7 +248,7 @@
                         <div class="col-md-2">
                             <div class="thumbnail">
                                 <a href="assets/img/enduro-4.jpg">
-                                    <img src="assets/img/enduro-4.jpg" class="img-thumbnail img-circle" alt="Stufen kurz vor Ende des Trails">
+                                    <img itemprop="image" src="assets/img/enduro-4.jpg" class="img-thumbnail img-circle" alt="Stufen kurz vor Ende des Trails">
                                     <div class="caption">
                                         <p>Stufen kurz vor Ende des Trails</p>
                                     </div>
@@ -237,9 +260,9 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-2">Links</h3>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="https://www.openstreetmap.org/relation/19629733" target="_blank">OpenStreetMap</a></li>
-                                <li class="list-group-item">Trailforks <a href="https://www.trailforks.com/trails/enduro-upper-part/" target="_blank">Abschnitt 1</a> & <a href="www.trailforks.com/trails/enduro-lower-part/" target="_blank">Abschnitt 2</a> & <a href="https://www.trailforks.com/trails/enduro-short-cut/" target="_blank">Short Cut</a></li>
-                                <!--<li class="list-group-item"><a href="https://www.outdooractive.com/r/805718073" target="_blank">outdooractive</a></li>-->
+                                <li class="list-group-item"><a itemprop="map" href="https://www.openstreetmap.org/relation/19629733" target="_blank">OpenStreetMap</a></li>
+                                <li class="list-group-item">Trailforks <a itemprop="sameAs" href="https://www.trailforks.com/trails/enduro-upper-part/" target="_blank">Abschnitt 1</a> & <a itemprop="sameAs" href="https://www.trailforks.com/trails/enduro-lower-part/" target="_blank">Abschnitt 2</a> & <a itemprop="sameAs" href="https://www.trailforks.com/trails/enduro-short-cut/" target="_blank">Short Cut</a></li>
+                                <!--<li class="list-group-item"><a itemprop="sameAs" href="https://www.outdooractive.com/r/805718073" target="_blank">outdooractive</a></li>-->
                                 <li class="list-group-item list-group-item-danger">Für Probleme und Verbesserungsvorschläge: <a href="https://mitmachen.ilmenau.de/dialog/1" target="_blank">Mängelmelder der Stadt Ilmenau</a></li>
                             </ul>
                         </div>
@@ -248,12 +271,12 @@
             </section>
             <hr class="m-0" />
             <!-- Linduro -->
-            <section class="resume-section" id="linduro">
+            <section itemprop="containsPlace" itemscope itemtype="https://schema.org/SportsActivityLocation" class="resume-section" id="linduro">
                 <div class="resume-section-content">
-                    <h2 class="mb-2 text-red">Linduro</h2>
+                    <h2 itemprop="name" class="mb-2 text-red">Linduro</h2>
                     <div class="subheading mb-5"><img src="assets/img/ilrc-logo.svg" height="25px" alt="Ilmenauer Radsportclub e.V. (ILRC)" /> Ilmenauer Radsportclub e.V.</div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
+                        <div itemprop="description" class="flex-grow-1">
                             <h3 class="mb-0">Charakter</h3>
                             <p>Enduro Trail über Wurzeln und Steine. Flache Kurven mit losem Untergrund. Mehrere lockere Schotterbetten. Einige umfahrbare Kicker. Gegenanstiege laden zum Pedalieren ein. Weiter unten kommen dafür einige Steilstellen mit losem Untergrund.</p>
                             <p>Nach dem ersten Abschnitt muss man auf dem Forstweg ein paar Meter nach rechts rollen, bis der Einstieg zum zweiten Abschnitt kommt.</p>
@@ -264,7 +287,7 @@
                         <div class="col-md-2">
                             <div class="thumbnail">
                                 <a href="assets/img/linduro-eingang.jpg">
-                                    <img src="assets/img/linduro-eingang.jpg" class="img-thumbnail img-circle" alt="Start Linduro">
+                                    <img itemprop="image" src="assets/img/linduro-eingang.jpg" class="img-thumbnail img-circle" alt="Start Linduro">
                                     <div class="caption">
                                         <p>Start Linduro</p>
                                     </div>
@@ -274,7 +297,7 @@
                         <div class="col-md-2">
                             <div class="thumbnail">
                                 <a href="assets/img/linduro-off-camber.jpeg">
-                                    <img src="assets/img/linduro-off-camber.jpeg" class="img-thumbnail img-circle" alt="Off Camber Action im Linduro">
+                                    <img itemprop="image" src="assets/img/linduro-off-camber.jpeg" class="img-thumbnail img-circle" alt="Off Camber Action im Linduro">
                                     <div class="caption">
                                         <p>Off Camber Action im Linduro</p>
                                     </div>
@@ -284,7 +307,7 @@
                         <div class="col-md-2">
                             <div class="thumbnail">
                                 <a href="assets/img/linduro-ende1.jpeg">
-                                    <img src="assets/img/linduro-ende1.jpeg" class="img-thumbnail img-circle" alt="Ende erster Abschnitt am Krummen Weg">
+                                    <img itemprop="image" src="assets/img/linduro-ende1.jpeg" class="img-thumbnail img-circle" alt="Ende erster Abschnitt am Krummen Weg">
                                     <div class="caption">
                                         <p>Ende erster Abschnitt am Krummen Weg</p>
                                     </div>
@@ -294,7 +317,7 @@
                         <div class="col-md-2">
                             <div class="thumbnail">
                                 <a href="assets/img/linduro-sprung.jpeg">
-                                    <img src="assets/img/linduro-sprung.jpeg" class="img-thumbnail img-circle" alt="Kleiner gebauter Sprung aus Kurve im Linduro">
+                                    <img itemprop="image" src="assets/img/linduro-sprung.jpeg" class="img-thumbnail img-circle" alt="Kleiner gebauter Sprung aus Kurve im Linduro">
                                     <div class="caption">
                                         <p>Kleiner gebauter Sprung aus Kurve im Linduro</p>
                                     </div>
@@ -304,7 +327,7 @@
                         <div class="col-md-2">
                             <div class="thumbnail">
                                 <a href="assets/img/linduro-wurzeln-steil.jpeg">
-                                    <img src="assets/img/linduro-wurzeln-steil.jpeg" class="img-thumbnail img-circle" alt="Wurzelfeld zwischen Baumstümpfen im Linduro">
+                                    <img itemprop="image" src="assets/img/linduro-wurzeln-steil.jpeg" class="img-thumbnail img-circle" alt="Wurzelfeld zwischen Baumstümpfen im Linduro">
                                     <div class="caption">
                                         <p>Wurzelfeld zwischen Baumstümpfen im Linduro</p>
                                     </div>
@@ -314,7 +337,7 @@
                         <div class="col-md-2">
                             <div class="thumbnail">
                                 <a href="assets/img/linduro-kurven.jpeg">
-                                    <img src="assets/img/linduro-kurven.jpeg" class="img-thumbnail img-circle" alt="Serpentinen im letzten Abschnitt des Linduro">
+                                    <img itemprop="image" src="assets/img/linduro-kurven.jpeg" class="img-thumbnail img-circle" alt="Serpentinen im letzten Abschnitt des Linduro">
                                     <div class="caption">
                                         <p>Serpentinen im letzten Abschnitt des Linduro</p>
                                     </div>
@@ -324,7 +347,7 @@
                         <div class="col-md-2">
                             <div class="thumbnail">
                                 <a href="assets/img/linduro-ende.jpeg">
-                                    <img src="assets/img/linduro-ende.jpeg" class="img-thumbnail img-circle" alt="Ende Linduro">
+                                    <img itemprop="image" src="assets/img/linduro-ende.jpeg" class="img-thumbnail img-circle" alt="Ende Linduro">
                                     <div class="caption">
                                         <p>Ende Linduro</p>
                                     </div>
@@ -336,9 +359,9 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-2">Links</h3>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="https://www.openstreetmap.org/relation/18200096" target="_blank">OpenStreetMap</a></li>
-                                <li class="list-group-item">Trailforks <a href="https://www.trailforks.com/trails/linduro-1/" target="_blank">Abschnitt 1</a> & <a href="https://www.trailforks.com/trails/linduro-2/" target="_blank">Abschnitt 2</a> & <a href="https://www.trailforks.com/trails/linduro-3/" target="_blank">Abschnitt 3</a></li>
-                                <li class="list-group-item"><a href="https://www.outdooractive.com/r/807916295" target="_blank">outdooractive</a></li>
+                                <li class="list-group-item"><a itemprop="map" href="https://www.openstreetmap.org/relation/18200096" target="_blank">OpenStreetMap</a></li>
+                                <li class="list-group-item">Trailforks <a itemprop="sameAs" href="https://www.trailforks.com/trails/linduro-1/" target="_blank">Abschnitt 1</a> & <a itemprop="sameAs" href="https://www.trailforks.com/trails/linduro-2/" target="_blank">Abschnitt 2</a> & <a itemprop="sameAs" href="https://www.trailforks.com/trails/linduro-3/" target="_blank">Abschnitt 3</a></li>
+                                <li class="list-group-item"><a itemprop="sameAs" href="https://www.outdooractive.com/r/807916295" target="_blank">outdooractive</a></li>
                             </ul>
                         </div>
                     </div>
@@ -346,12 +369,12 @@
             </section>
             <hr class="m-0" />
             <!-- Trainingsstrecke -->
-            <section class="resume-section" id="trainingsstrecke">
+            <section itemprop="containsPlace" itemscope itemtype="https://schema.org/SportsActivityLocation" class="resume-section" id="trainingsstrecke">
                 <div class="resume-section-content">
-                    <h2 class="mb-2 text-black">Trainingsstrecke</h2>
+                    <h2 itemprop="name" class="mb-2 text-black">Trainingsstrecke</h2>
                     <div class="subheading mb-5"><img src="assets/img/ilrc-logo.svg" height="25px" alt="Ilmenauer Radsportclub e.V. (ILRC)" /> Ilmenauer Radsportclub e.V.</div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
+                        <div itemprop="description" class="flex-grow-1">
                             <h3 class="mb-0">Charakter</h3>
                             <p>Enduro Trail über Wurzeln und Steine. Vom Charakter her ähnlich, wie der <a href="#linduro">Linduro</a>, jedoch anspruchsvoller.</p>
                             <p>Die Trainingsstrecke folgt zu Beginn der Downhillstrecke, geht aber nach dem Startsprung geradeaus weiter. In der ersten Sektion verbirgt sich ein nicht überrollbarer Drop, der rechts umfahren werden kann.</p>
@@ -361,8 +384,8 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-2">Links</h3>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="https://www.openstreetmap.org/relation/16708106" target="_blank">OpenStreetMap</a></li>
-                                <li class="list-group-item">Trailforks <a href="https://www.trailforks.com/trails/ilrc-trainingsstrecke/" target="_blank">Abschnitt 1</a> & <a href="https://www.trailforks.com/trails/ilrc-trainingsstrecke-852204/" target="_blank">Abschnitt 2</a></li>
+                                <li class="list-group-item"><a itemprop="map" href="https://www.openstreetmap.org/relation/16708106" target="_blank">OpenStreetMap</a></li>
+                                <li class="list-group-item">Trailforks <a itemprop="sameAs" href="https://www.trailforks.com/trails/ilrc-trainingsstrecke/" target="_blank">Abschnitt 1</a> & <a itemprop="sameAs" href="https://www.trailforks.com/trails/ilrc-trainingsstrecke-852204/" target="_blank">Abschnitt 2</a></li>
                             </ul>
                         </div>
                     </div>
@@ -370,12 +393,12 @@
             </section>
             <hr class="m-0" />
             <!-- Downhillstrecke -->
-            <section class="resume-section" id="downhillstrecke">
+            <section itemprop="containsPlace" itemscope itemtype="https://schema.org/SportsActivityLocation" class="resume-section" id="downhillstrecke">
                 <div class="resume-section-content">
-                    <h2 class="mb-2 text-black">Downhillstrecke</h2>
+                    <h2 itemprop="name" class="mb-2 text-black">Downhillstrecke</h2>
                     <div class="subheading mb-5"><img src="assets/img/ilrc-logo.svg" height="25px" alt="Ilmenauer Radsportclub e.V. (ILRC)" /> Ilmenauer Radsportclub e.V.</div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
+                        <div itemprop="description" class="flex-grow-1">
                             <h3 class="mb-0">Charakter</h3>
                             <p>Die Downhillstrecke ist seit Ende der 90er Jahre Austragungsort der <a href="https://absolute-abfahrt.de" target="_blank">Absoluten Abfahrt</a>. Sie wird in ihrer Streckenführung jedes Jahr angepasst und umgebaut. Alte Sektionen sind aber oft dennoch fahrbar, sodass jede Abfahrt anders kombiniert werden kann.</p>
                             <p>Die Downhillstrecke beinhaltet mehrere hohe Sprünge und Gaps, die nicht rollbar sind. Alle Elemente haben rollbare Chickenways.</p>
@@ -385,8 +408,8 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-2">Links</h3>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="https://www.openstreetmap.org/relation/14414019" target="_blank">OpenStreetMap</a></li>
-                                <li class="list-group-item"><a href="https://www.trailforks.com/trails/ixs-downhill-strecke/" target="_blank">Trailforks</a></li>
+                                <li class="list-group-item"><a itemprop="map" href="https://www.openstreetmap.org/relation/14414019" target="_blank">OpenStreetMap</a></li>
+                                <li class="list-group-item"><a itemprop="sameAs" href="https://www.trailforks.com/trails/ixs-downhill-strecke/" target="_blank">Trailforks</a></li>
                             </ul>
                         </div>
                     </div>
@@ -407,13 +430,18 @@
                                 Andreas Neumann<br/>
                                 Obertorstraße 11<br/>
                                 98693 Ilmenau<br/>
-                                webmaster at stadtplan minus ilmenau punkt de
+                                <a href="mailto:webmaster@stadtplan-ilmenau.de">webmaster@stadtplan-ilmenau.de</a>
                             </p>
                         </div>
-                        <div class="flex-md-grow-1">
-                            <h3 class="mb-0">Ilmenauer Radsportclub e.V.</h3>
+                        <div itemscope itemtype="https://schema.org/SportsClub" class="flex-md-grow-1">
+                            <h3 itemprop="name" class="mb-0">Ilmenauer Radsportclub e.V.</h3>
+                            <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">Sturmheide 63</span><br/>
+                                <span itemprop="postalCode">98693</span> <span itemprop="addressLocality">Ilmenau</span>
+                            </p>
                             <p>
-                                vorstand at ilrc punkt de
+                                <a itemprop="url" href="https://ilrc.de">ilrc.de</a><br/>
+                                <a itemprop="email" href="mailto:vorstand@ilrc.de">vorstand@ilrc.de</a>
                             </p>
                         </div>
                         <div class="flex-grow-2">
