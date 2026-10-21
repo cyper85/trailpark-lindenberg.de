@@ -31,4 +31,42 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Lightbox for photo galleries
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox) {
+        const modal = new bootstrap.Modal(lightbox);
+        const image = lightbox.querySelector('.lightbox-image');
+        const caption = lightbox.querySelector('#lightbox-caption');
+        let links = [];
+        let current = 0;
+
+        const show = index => {
+            current = (index + links.length) % links.length;
+            const link = links[current];
+            const thumb = link.querySelector('img');
+            image.src = link.href;
+            image.alt = thumb.alt;
+            caption.textContent = link.closest('figure').querySelector('figcaption').textContent;
+        };
+
+        document.querySelectorAll('.gallery').forEach(gallery => {
+            const galleryLinks = [].slice.call(gallery.querySelectorAll('.gallery-link'));
+            galleryLinks.forEach((link, index) => {
+                link.addEventListener('click', event => {
+                    event.preventDefault();
+                    links = galleryLinks;
+                    show(index);
+                    modal.show();
+                });
+            });
+        });
+
+        lightbox.querySelector('.lightbox-prev').addEventListener('click', () => show(current - 1));
+        lightbox.querySelector('.lightbox-next').addEventListener('click', () => show(current + 1));
+        lightbox.addEventListener('keydown', event => {
+            if (event.key === 'ArrowLeft') show(current - 1);
+            if (event.key === 'ArrowRight') show(current + 1);
+        });
+    }
+
 });

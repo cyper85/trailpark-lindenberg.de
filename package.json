@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "sass css/styles.scss:css/styles.css",
+    "build:js": "node -e \"for (const f of ['bootstrap.bundle.min.js', 'bootstrap.bundle.min.js.map']) require('fs').copyFileSync('node_modules/bootstrap/dist/js/' + f, 'js/vendor/' + f)\"",
+    "watch": "sass --watch css/styles.scss:css/styles.css"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/cyper85/trailpark-lindenberg.de.git"
   },
   "dependencies": {
-    "bootstrap": ">=5.3.7"
+    "bootstrap": "5.3.8"
+  },
+  "devDependencies": {
+    "sass": "1.90.0"
   }
 }
