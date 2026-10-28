@@ -37,7 +37,7 @@ jobs:
           cp css/styles.css _site/css/
           cp -r js/scripts.js js/vendor _site/js/
 
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
