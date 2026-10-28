@@ -5,7 +5,7 @@
   "scripts": {
     "build": "npm run build:js && npm run build:css",
     "build:css": "sass --style=compressed --no-source-map --quiet-deps css/styles.scss:css/styles.css && purgecss --css css/styles.css --content index.html js/scripts.js js/vendor/bootstrap.bundle.min.js --safelist show showing hiding collapsing collapsed active fade modal-backdrop modal-open modal-static --output css/",
-    "build:js": "node -e \"for (const f of ['bootstrap.bundle.min.js', 'bootstrap.bundle.min.js.map']) require('fs').copyFileSync('node_modules/bootstrap/dist/js/' + f, 'js/vendor/' + f)\"",
+    "build:js": "node -e \"const fs = require('fs'); fs.mkdirSync('js/vendor', {recursive: true}); for (const f of ['bootstrap.bundle.min.js', 'bootstrap.bundle.min.js.map']) fs.copyFileSync('node_modules/bootstrap/dist/js/' + f, 'js/vendor/' + f)\"",
     "watch": "sass --watch css/styles.scss:css/styles.css"
   },
   "repository": {
