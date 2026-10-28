@@ -1,2 +1,7 @@
 /node_modules/
 /package-lock.json
+
+# Build output (created by "npm run build" / GitHub Actions)
+/css/styles.css
+/css/styles.css.map
+/js/vendor/
