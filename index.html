@@ -14,6 +14,8 @@
         <meta name="ICBM" content="50.665709, 10.906398">
         <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="180x180">
         <link rel="apple-touch-icon" href="assets/img/favicon.png">
+        <link rel="preload" href="assets/fonts/saira-extra-condensed-v14-latin_latin-ext-700.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="assets/fonts/noto-sans-v39-latin_latin-ext-regular.woff2" as="font" type="font/woff2" crossorigin>
         <link href="css/styles.css" rel="stylesheet">
         <meta name="robots" content="all">
         <meta property="og:image" content="https://trailpark-lindenberg.de/assets/img/og-image.jpg">
@@ -31,19 +33,19 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Trailpark Lindenberg</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile mx-auto mb-2" src="assets/img/ilmenau-logo.svg" alt="Trailpark Lindenberg"></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile mx-auto mb-2" src="assets/img/ilmenau-logo.svg" width="94" height="105" alt="Trailpark Lindenberg"></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#index">Index</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#start">Parken & Starten</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger text-blue" href="#flowtrail"><img height="18" src="assets/img/ilmenau-logo.svg" alt="">&nbsp;FlowTrail</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger text-red" href="#playline"><img height="18" src="assets/img/ilmenau-logo.svg" alt="">&nbsp;PlayLine</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger text-red" href="#endurotrail"><img height="18" src="assets/img/ilmenau-logo.svg" alt="">&nbsp;EnduroTrail</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger text-red" href="#linduro"><img height="18" src="assets/img/ilrc-logo.svg" alt="">&nbsp;Linduro</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#trainingsstrecke"><img height="18" src="assets/img/ilrc-logo.svg" alt="">&nbsp;Trainingsstrecke</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#downhillstrecke"><img height="18" src="assets/img/ilrc-logo.svg" alt="">&nbsp;Downhillstrecke</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger text-blue" href="#flowtrail"><img width="16" height="18" src="assets/img/ilmenau-logo.svg" alt="">&nbsp;FlowTrail</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger text-red" href="#playline"><img width="16" height="18" src="assets/img/ilmenau-logo.svg" alt="">&nbsp;PlayLine</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger text-red" href="#endurotrail"><img width="16" height="18" src="assets/img/ilmenau-logo.svg" alt="">&nbsp;EnduroTrail</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger text-red" href="#linduro"><img width="18" height="18" src="assets/img/ilrc-logo.svg" alt="">&nbsp;Linduro</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#trainingsstrecke"><img width="18" height="18" src="assets/img/ilrc-logo.svg" alt="">&nbsp;Trainingsstrecke</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#downhillstrecke"><img width="18" height="18" src="assets/img/ilrc-logo.svg" alt="">&nbsp;Downhillstrecke</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#impressum">Impressum</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#datenschutz">Datenschutz</a></li>
                 </ul>
@@ -77,12 +79,12 @@
                         </p>
                     </div>
                     <ul class="list-unstyled mb-0">
-                        <li><a class="nav-link js-scroll-trigger text-blue" href="#flowtrail"><img height="15" src="assets/img/ilmenau-logo.svg" alt="">&nbsp;FlowTrail</a></li>
-                        <li><a class="nav-link js-scroll-trigger text-red" href="#playline"><img height="15" src="assets/img/ilmenau-logo.svg" alt="">&nbsp;PlayLine</a></li>
-                        <li><a class="nav-link js-scroll-trigger text-red" href="#endurotrail"><img height="15" src="assets/img/ilmenau-logo.svg" alt="">&nbsp;EnduroTrail</a></li>
-                        <li><a class="nav-link js-scroll-trigger text-red" href="#linduro"><img height="15" src="assets/img/ilrc-logo.svg" alt="">&nbsp;Linduro</a></li>
-                        <li><a class="nav-link js-scroll-trigger text-black" href="#trainingsstrecke"><img height="15" src="assets/img/ilrc-logo.svg" alt="">&nbsp;Trainingsstrecke</a></li>
-                        <li><a class="nav-link js-scroll-trigger text-black" href="#downhillstrecke"><img height="15" src="assets/img/ilrc-logo.svg" alt="">&nbsp;Downhillstrecke</a></li>
+                        <li><a class="nav-link js-scroll-trigger text-blue" href="#flowtrail"><img width="13" height="15" src="assets/img/ilmenau-logo.svg" alt="">&nbsp;FlowTrail</a></li>
+                        <li><a class="nav-link js-scroll-trigger text-red" href="#playline"><img width="13" height="15" src="assets/img/ilmenau-logo.svg" alt="">&nbsp;PlayLine</a></li>
+                        <li><a class="nav-link js-scroll-trigger text-red" href="#endurotrail"><img width="13" height="15" src="assets/img/ilmenau-logo.svg" alt="">&nbsp;EnduroTrail</a></li>
+                        <li><a class="nav-link js-scroll-trigger text-red" href="#linduro"><img width="15" height="15" src="assets/img/ilrc-logo.svg" alt="">&nbsp;Linduro</a></li>
+                        <li><a class="nav-link js-scroll-trigger text-black" href="#trainingsstrecke"><img width="15" height="15" src="assets/img/ilrc-logo.svg" alt="">&nbsp;Trainingsstrecke</a></li>
+                        <li><a class="nav-link js-scroll-trigger text-black" href="#downhillstrecke"><img width="15" height="15" src="assets/img/ilrc-logo.svg" alt="">&nbsp;Downhillstrecke</a></li>
                     </ul>
                 </div>
             </section>
@@ -145,7 +147,7 @@
             <section itemprop="containsPlace" itemscope itemtype="https://schema.org/SportsActivityLocation" class="resume-section" id="flowtrail">
                 <div class="resume-section-content">
                     <h2 itemprop="name" class="mb-2 text-blue">FlowTrail</h2>
-                    <div class="subheading mb-5"><img src="assets/img/ilmenau-logo.svg" height="25" alt=""> Stadt Ilmenau</div>
+                    <div class="subheading mb-5"><img src="assets/img/ilmenau-logo.svg" width="22" height="25" alt=""> Stadt Ilmenau</div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1 text-danger">
                             <h3 class="mb-0">Hinweis</h3>
@@ -177,7 +179,7 @@
             <section itemprop="containsPlace" itemscope itemtype="https://schema.org/SportsActivityLocation" class="resume-section" id="playline">
                 <div class="resume-section-content">
                     <h2 itemprop="name" class="mb-2 text-red">PlayLine</h2>
-                    <div class="subheading mb-5"><img src="assets/img/ilmenau-logo.svg" height="25" alt=""> Stadt Ilmenau</div>
+                    <div class="subheading mb-5"><img src="assets/img/ilmenau-logo.svg" width="22" height="25" alt=""> Stadt Ilmenau</div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1 text-danger">
                             <h3 class="mb-0">Hinweis</h3>
@@ -208,7 +210,7 @@
             <section itemprop="containsPlace" itemscope itemtype="https://schema.org/SportsActivityLocation" class="resume-section" id="endurotrail">
                 <div class="resume-section-content">
                     <h2 itemprop="name" class="mb-2 text-red">EnduroTrail</h2>
-                    <div class="subheading mb-5"><img src="assets/img/ilmenau-logo.svg" height="25" alt=""> Stadt Ilmenau</div>
+                    <div class="subheading mb-5"><img src="assets/img/ilmenau-logo.svg" width="22" height="25" alt=""> Stadt Ilmenau</div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <!--<div class="flex-grow-1 text-danger">
                             <h3 class="mb-0">Hinweis</h3>
@@ -267,7 +269,7 @@
             <section itemprop="containsPlace" itemscope itemtype="https://schema.org/SportsActivityLocation" class="resume-section" id="linduro">
                 <div class="resume-section-content">
                     <h2 itemprop="name" class="mb-2 text-red">Linduro</h2>
-                    <div class="subheading mb-5"><img src="assets/img/ilrc-logo.svg" height="25" alt=""> Ilmenauer Radsportclub e.V.</div>
+                    <div class="subheading mb-5"><img src="assets/img/ilrc-logo.svg" width="25" height="25" alt=""> Ilmenauer Radsportclub e.V.</div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div itemprop="description" class="flex-grow-1">
                             <h3 class="mb-0">Charakter</h3>
@@ -338,7 +340,7 @@
             <section itemprop="containsPlace" itemscope itemtype="https://schema.org/SportsActivityLocation" class="resume-section" id="trainingsstrecke">
                 <div class="resume-section-content">
                     <h2 itemprop="name" class="mb-2 text-black">Trainingsstrecke</h2>
-                    <div class="subheading mb-5"><img src="assets/img/ilrc-logo.svg" height="25" alt=""> Ilmenauer Radsportclub e.V.</div>
+                    <div class="subheading mb-5"><img src="assets/img/ilrc-logo.svg" width="25" height="25" alt=""> Ilmenauer Radsportclub e.V.</div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div itemprop="description" class="flex-grow-1">
                             <h3 class="mb-0">Charakter</h3>
@@ -362,7 +364,7 @@
             <section itemprop="containsPlace" itemscope itemtype="https://schema.org/SportsActivityLocation" class="resume-section" id="downhillstrecke">
                 <div class="resume-section-content">
                     <h2 itemprop="name" class="mb-2 text-black">Downhillstrecke</h2>
-                    <div class="subheading mb-5"><img src="assets/img/ilrc-logo.svg" height="25" alt=""> Ilmenauer Radsportclub e.V.</div>
+                    <div class="subheading mb-5"><img src="assets/img/ilrc-logo.svg" width="25" height="25" alt=""> Ilmenauer Radsportclub e.V.</div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div itemprop="description" class="flex-grow-1">
                             <h3 class="mb-0">Charakter</h3>

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "npm run build:css && npm run build:js",
-    "build:css": "sass css/styles.scss:css/styles.css",
+    "build": "npm run build:js && npm run build:css",
+    "build:css": "sass --style=compressed --no-source-map --quiet-deps css/styles.scss:css/styles.css && purgecss --css css/styles.css --content index.html js/scripts.js js/vendor/bootstrap.bundle.min.js --safelist show showing hiding collapsing collapsed active fade modal-backdrop modal-open modal-static --output css/",
     "build:js": "node -e \"for (const f of ['bootstrap.bundle.min.js', 'bootstrap.bundle.min.js.map']) require('fs').copyFileSync('node_modules/bootstrap/dist/js/' + f, 'js/vendor/' + f)\"",
     "watch": "sass --watch css/styles.scss:css/styles.css"
   },
@@ -16,6 +16,7 @@
     "bootstrap": "5.3.8"
   },
   "devDependencies": {
+    "purgecss": "8.0.0",
     "sass": "1.106.1"
   }
 }
