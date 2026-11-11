@@ -13,7 +13,7 @@
     "url": "https://github.com/cyper85/trailpark-lindenberg.de.git"
   },
   "dependencies": {
-    "bootstrap": "5.3.8"
+    "bootstrap": "5.3.9"
   },
   "devDependencies": {
     "purgecss": "8.0.0",
