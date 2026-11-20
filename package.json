@@ -17,6 +17,6 @@
   },
   "devDependencies": {
     "purgecss": "9.1.0",
-    "sass": "1.107.1"
+    "sass": "1.108.2"
   }
 }
